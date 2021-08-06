@@ -8,8 +8,9 @@ En mi equipo esta instalada la versión 12.18.3, suficiente para realizar este b
 
 ## 03.- Instalación de lite-server
 
-Validamos que npme esta instalado: npm --version     =>  6.14.16
-Instalamo paquete:  npm i -g lite-server
+* Validamos que npm está instalado: ```npm --version``` => 6.14.16, versión adecuada para seguir el curso.
+
+* Instalamos paquete:  ```npm i -g lite-server```
 
 Al crear el ejercicio validamos que la instalación se ha realizado correctamente.
 Por un conflicto con la asignación de mi host, el servidor no funciona en localhost:3000, tal y conmo se abre la ventana, pero funciona sin problemas como 127.0.0.1:3000. Lo dejo estar.
@@ -23,7 +24,7 @@ Agregamos una estructura HTML básica (recordad, escribimos html:5 y presionamos
 
 ./index.html
 
-'''html
+```html
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,8 +37,7 @@ Agregamos una estructura HTML básica (recordad, escribimos html:5 y presionamos
 
   <body></body>
 </html>
-
-'''
+```
 
 Agregamos los contenedores genéricos para estructurar nuestra página.
 ./index.html
