@@ -197,7 +197,107 @@ document.getElementById("lastName").value = "Mi apellido";
 ```
 
 ### 04.4.- Insertar una imagen en nuestro formulario
+* Buscamos imagen para añadir el avatar: [unDraw](https://undraw.co/search)
+* Creamos una nueva carpeta para contener las imagenes **img**
+* Agregamos la imagen descargada en esta carpeta.
+* Editamos ```index.html``` para visualizar esta imagen, agregando una etiqueta ```ìmg``` con sus correspondientes estilos y cargandola desde el archivo JavaScript.
+
+*./index.html*
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/site.css" />
+    <title>Datos de Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="" id="avatar" alt="Avatar" class="avatar" />
+        </div>
+        <div class="data">
+            <label for="name"><b>Name</b></label>
+            <input type="text" id="name" name="name" />
+            
+            <label for="lastName"><b>Last Name</b></label>
+            <input type="text" id="lastName" name="latName" />
+        </div>
+    </div>
+
+    <script src="js/demo.js"></script>
+</body>
+</html>
+```
+
+*./css/sites.css*
+```css
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 32px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+.img {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+  
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.data {
+    padding: 16px;
+}
+```
+
+*./js/demo.js*
+```js
+document.getElementById("name").value = "Mi nombre";
+document.getElementById("lastName").value = "Mi apellido";
+document.getElementById("avatar").src ="img\\avatar.png";
+```
+
+***Resultado***
+
+![Pantallazo][img1]
 
 ### 04.5.- Opcional
 
+*./index.html*
+```html
+
+```
+
+*./css/sites.css*
+```css
+
+```
+
+*./js/demo.js*
+```js
+
+```
+
 ## 5.- Depurar con VS Code y Chrome
+
+
+
+[img1]: /docs/Modulo01_Ejercicio04.jpeg "Pantallazo"
