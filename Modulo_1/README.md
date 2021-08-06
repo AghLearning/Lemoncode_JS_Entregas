@@ -300,4 +300,4 @@ document.getElementById("avatar").src ="img\\avatar.png";
 
 
 
-[img1]: /docs/Modulo01_Ejercicio04.jpeg "Pantallazo"
+[img1]: https://github.com/AghLearning/Lemoncode_JS_Entregas/blob/main/Modulo_1/docs/Modulo01-Ejercicio04.jpeg "Pantallazo"
