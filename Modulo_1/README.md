@@ -22,10 +22,9 @@ Por un conflicto con la asignación de mi host, el servidor no funciona en local
 Desde dentro de VS Code creamos un nuevo fichero HTML ./index.html
 Agregamos una estructura HTML básica (recordad, escribimos html:5 y presionamos intro).
 
-./index.html
+*./index.html*
 
 ```html
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,10 +39,9 @@ Agregamos una estructura HTML básica (recordad, escribimos html:5 y presionamos
 ```
 
 Agregamos los contenedores genéricos para estructurar nuestra página.
-./index.html
 
+*./index.html*
 ```html 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,8 +63,8 @@ Agregamos los contenedores genéricos para estructurar nuestra página.
 ```
 
 Ahora vamos a crear dos cajas de texto con etiquetas para rellenarlas.
-./index.html
 
+*./index.html*
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +92,72 @@ Ahora vamos a crear dos cajas de texto con etiquetas para rellenarlas.
 </html>
 
 ```
+### 04.2.- Creamos los estilos de la página.
 
+* Estrucutramos la carpeta para separar esos ficheros en un carpta denominada **css**
+* Añadimos en esta carpeta el fichero de estilos **site.css**
+* Enlazaos los estilo con la página **index.html**
 
+***Resultado***
 
-### 04.2.- 
+*./css/site.css*
+
+```css
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 32px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+.data {
+    padding: 16px;
+}
+
+```
+
+*./index.html*
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/site.css" />
+    <title>Datos de Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img"></div>
+        <div class="data">
+            <label for="name"><b>Name</b></label>
+            <input type="text" id="name" name="name" />
+            
+            <label for="lastName"><b>Last Name</b></label>
+            <input type="text" id="lastName" name="latName" />
+
+        </div>
+    </div>
+</body>
+</html>
+```
+
+### 04.3.- Agregando interacción al HTML con JavaScript
+
+### 04.4.- Insertar una imagen en nuestro formulario
+
+### 04.5.- Opcional
+
+## 5.- Depurar con VS Code y Chrome
