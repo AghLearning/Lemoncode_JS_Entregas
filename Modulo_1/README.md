@@ -156,6 +156,46 @@ input {
 
 ### 04.3.- Agregando interacción al HTML con JavaScript
 
+* Creamos una carpeta para organizar todos los ficheros javascript: **js**
+* Añadimos en dicha carpeta el fichero **demo.js**
+* Enlazamos dicho archivo con el documento HTML.
+
+*./js/demo.js*
+```js
+document.getElementById("name").value = "Mi nombre";
+document.getElementById("lastName").value = "Mi apellido";
+```
+
+*./index.html*
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/site.css" />
+    <title>Datos de Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img"></div>
+        <div class="data">
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" id="name" name="name" />
+            
+            <label for="lastName"><b>Last Name</b></label>
+            <input type="text" id="lastName" name="latName" />
+
+        </div>
+    </div>
+
+    <script src="js/demo.js"></script>
+</body>
+</html>
+```
+
 ### 04.4.- Insertar una imagen en nuestro formulario
 
 ### 04.5.- Opcional
